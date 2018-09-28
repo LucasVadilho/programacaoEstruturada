@@ -3,8 +3,11 @@
 Repositório para guardar minha resolução das listas de exercícios.
 
 **Programação Estruturada:** Q3-2018
+
 **Professor:** Luiz Rozante
+
 **Turma:** A1-Noturno
+
 **Lingugem:** C
 
 ## Listas
