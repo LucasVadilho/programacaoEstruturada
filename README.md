@@ -18,7 +18,7 @@ As listas estão disponíveis no [URI](https://www.urionlinejudge.com.br/) ou no
 | Lista | Data entrega |
 | :---: | :----------: |
 | ~~1~~ | ~~04/10~~    |
-| 2     | 04/10        |
+| ~~2~~ | ~~04/10~~    |
 | 3     | 11/10        |
 | 4     | 18/10        |
 | 5     | 25/10        |
