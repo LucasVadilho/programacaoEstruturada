@@ -8,10 +8,11 @@ void jogar(char j1[], char j2[]){
             strcmp(j2, "papel") == 0
         ) printf("Jogador 1 venceu\n");
         else printf("Aniquilacao mutua\n");
-    } else if(strcmp(j1, "pedra")){
-        if(strcmp(j2, "papel")) printf("Jogador 1 venceu\n");
-        if(strcmp(j2, "pedra")) printf("Sem ganhador\n");
-    }
+    } else if(strcmp(j1, "pedra") == 0){
+        if(strcmp(j2, "papel") == 0) printf("Jogador 1 venceu\n");
+        if(strcmp(j2, "pedra") == 0) printf("Sem ganhador\n");
+    } else if(strcmp(j2, "papel") == 0) printf("Ambos venceram\n");
+    else printf("Jogador 2 venceu\n");
 }
 
 void main(){
