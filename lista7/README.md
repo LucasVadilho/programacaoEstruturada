@@ -8,3 +8,8 @@ Eles foram compilados e rodados com os seguintes comandos:
 gcc {arquivo.c} -o {arquivo} -lm
 ./{arquivo}
 ```
+
+Para executar alguns códigos, como Busca Linear Recursiva em um vetor grande, foi necessário aumentar o tamanho do _stack_ com o seguinte comando:
+```bash
+ulimit -S -s 131072
+```

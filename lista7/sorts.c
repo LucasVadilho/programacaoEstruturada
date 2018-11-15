@@ -12,7 +12,6 @@ int* bubbleSort(int tamanho, int* vetor){
     return vetor;
 }
     
-
 int* selectionSort(int tamanho, int* vetor){
     int i, j;
     for(i = 0; i < tamanho; i++){
@@ -39,14 +38,4 @@ int* insertionSort(int tamanho, int* vetor){
         vetor[j + 1] = valor;
     }
     return vetor;
-}
-
-#include <stdio.h>
-
-void imprimirVetor(int tamanho, int* vetor){
-    int i;
-    for(i = 0; i < tamanho; i++){
-        printf("v[%d] = %d\n", i, vetor[i]);
-    }
-    printf("\n");
 }

@@ -1,4 +1,4 @@
-#include "busca.h"
+#include "buscas.h"
 
 int buscaLinear(int tamanho, int* vetor, int n){
 	int i;
@@ -10,10 +10,10 @@ int buscaLinear(int tamanho, int* vetor, int n){
 
 int buscaLinearRecursiva(int tamanho, int* vetor, int n){
 	int pos = tamanho - 1;
-
+	
 	if(pos < 0) return -1;
 
-	if(vetor[pos] == n) return tamanho;
+	if(vetor[pos] == n) return pos;
 
 	return buscaLinearRecursiva(pos, vetor, n);
 }
@@ -22,12 +22,12 @@ int buscaBinaria(int tamanho, int* vetor, int n){
 	int inicio = 0, fim = tamanho - 1;
 	int meio;
 
-	while(fim > inicio){
+	while(fim >= inicio){
 		meio = (inicio + fim) / 2;
 
 		if(vetor[meio] == n) return meio;
 
-		if(vetor[meio] > n){
+		if(n > vetor[meio]){
 			inicio = meio + 1;
 		} else{
 			fim = meio - 1;
@@ -38,12 +38,12 @@ int buscaBinaria(int tamanho, int* vetor, int n){
 }
 
 int buscaBinariaRecursiva(int inicio, int fim, int* vetor, int n){
-	if(fim > inicio) return -1;
+	if(inicio > fim) return -1;
 	
 	int meio = (inicio + fim) / 2;
-	
+
 	if(vetor[meio] == n) return meio;
 
-	if(vetor[meio] > n) return buscaBinariaRecursiva((meio + 1), fim, vetor, n);
+	if(n > vetor[meio]) return buscaBinariaRecursiva((meio + 1), fim, vetor, n);
 	else return buscaBinariaRecursiva(inicio, (meio - 1), vetor, n);
 }
