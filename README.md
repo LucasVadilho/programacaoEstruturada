@@ -23,6 +23,4 @@ As listas estão disponíveis no [URI](https://www.urionlinejudge.com.br/) ou no
 | ~~4~~ | ~~18/10~~    |
 | ~~5~~ | ~~25/10~~    |
 | ~~6~~ | ~~15/11~~    |
-| 7     | 15/11        |
-| 8     | 22/11        |
-| 9     | 29/11        |
+| ~~7~~ | ~~15/11~~    |
